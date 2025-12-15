@@ -1,0 +1,6 @@
+name: BiomeMetric
+main: com.Bit.BiomeMetric
+version: 1.3
+api-version: 1.21
+author: Bit
+description: Biome specific persistent crop growth

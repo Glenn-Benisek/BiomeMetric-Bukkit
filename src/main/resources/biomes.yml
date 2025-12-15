@@ -1,0 +1,282 @@
+update-interval: 10 # seconds (43200 = 12 hours, 86400 = 24 hours, 129600 = 36)
+default-max-height: 3 # (cactus, sugar cane)
+
+# Biome Group Definitions
+biome-groups:
+  Tropical:
+    - JUNGLE
+    - BAMBOO_JUNGLE
+    - SPARSE_JUNGLE
+    - MANGROVE_SWAMP
+    - SWAMP
+
+    # Terralith
+    - terralith:amethyst_rainforest  
+    - terralith:amethyst_canyon      
+    - terralith:jungle_mountains     
+    - terralith:rocky_jungle         
+    - terralith:tropical_jungle      
+    - terralith:orchid_swamp         
+    - terralith:alpha_islands        
+    - terralith:mirage_isles         
+    - terralith:lavender_forest      
+    - terralith:lavender_valley      
+    - terralith:moonlight_grove      
+    - terralith:moonlight_valley     
+    - terralith:sakura_grove         
+    - terralith:sakura_valley        
+    - terralith:blooming_plateau     
+    - terralith:blooming_valley      
+    - terralith:cloud_forest         
+
+  Arid:
+    - DESERT
+    - BADLANDS
+    - ERODED_BADLANDS
+    - WOODED_BADLANDS
+    - SAVANNA
+    - SAVANNA_PLATEAU
+    - WINDSWEPT_SAVANNA
+
+    # Terralith
+    - terralith:ancient_sands        
+    - terralith:arid_highlands       
+    - terralith:bryce_canyon         
+    - terralith:desert_canyon        
+    - terralith:desert_oasis         
+    - terralith:desert_spires        
+    - terralith:fractured_savanna    
+    - terralith:lush_desert          
+    - terralith:red_oasis            
+    - terralith:sandstone_valley     
+    - terralith:savanna_badlands     
+    - terralith:savanna_slopes       
+    - terralith:warped_mesa          
+    - terralith:white_mesa           
+    - terralith:ashen_savanna        
+    - terralith:brushland            
+    - terralith:hot_shrubland        
+    - terralith:shrubland            
+    - terralith:painted_mountains    
+    - terralith:stony_spires         
+    - terralith:temperate_highlands  
+    - terralith:volcanic_crater      
+    - terralith:volcanic_peaks       
+    - terralith:white_cliffs         
+    - terralith:basalt_cliffs        
+    - terralith:granite_cliffs       
+    - terralith:alpine_highlands     
+    - terralith:shield_clearing      
+    - terralith:valley_clearing      
+    - terralith:steppe               
+    - terralith:caldera              
+    - terralith:yellowstone          
+
+  Temperate:
+    - PLAINS
+    - FOREST
+    - FLOWER_FOREST
+    - BIRCH_FOREST
+    - DARK_FOREST
+    - MEADOW
+    - SUNFLOWER_PLAINS
+    - OLD_GROWTH_BIRCH_FOREST
+
+    # Terralith
+    - terralith:highlands            
+    - terralith:forested_highlands   
+    - terralith:shield               
+    - terralith:warm_river           
+    - terralith:skylands             
+    - terralith:skylands_autumn      
+    - terralith:skylands_spring      
+    - terralith:skylands_summer      
+    - terralith:lush_valley          
+    - terralith:mountain_steppe      
+    - terralith:yosemite_cliffs      
+    - terralith:gravel_beach         
+
+  Chilly:
+    - TAIGA
+    - OLD_GROWTH_PINE_TAIGA
+    - OLD_GROWTH_SPRUCE_TAIGA
+    - SNOWY_TAIGA
+    - GROVE
+    - SNOWY_PLAINS
+
+    # Terralith
+    - terralith:alpha_islands_winter 
+    - terralith:birch_taiga          
+    - terralith:siberian_taiga       
+    - terralith:skylands_winter      
+    - terralith:ice_marsh            
+    - terralith:yosemite_lowlands    
+    - terralith:snowy_badlands       
+    - terralith:snowy_cherry_grove   
+    - terralith:snowy_maple_forest   
+    - terralith:snowy_shield         
+    - terralith:cold_shrubland       
+    - terralith:rocky_shrubland      
+    - terralith:siberian_grove       
+    - terralith:gravel_desert        
+    - terralith:windswept_spires     
+
+  Alpine:
+    - FROZEN_PEAKS
+    - JAGGED_PEAKS
+    - STONY_PEAKS
+    - SNOWY_SLOPES
+
+    # Terralith
+    - terralith:alpine_grove         
+    - terralith:frozen_cliffs        
+    - terralith:glacial_chasm        
+    - terralith:emerald_peaks        
+    - terralith:scarlet_mountains    
+    - terralith:rocky_mountains      
+    - terralith:haze_mountain        
+    - terralith:wintry_forest        
+    - terralith:wintry_lowlands      
+
+# Crop growth, fruit-intervals (how long between each fruit after maturity)
+groups:
+  Tropical:
+    WHEAT: -1
+    CARROTS: 129600
+    POTATOES: -1
+    BEETROOTS: -1
+    SWEET_BERRY_BUSH: -1
+    COCOA: 43200
+    PUMPKIN_STEM: -1
+    PUMPKIN_STEM-fruit-interval: -1
+    MELON_STEM: 43200
+    MELON_STEM-fruit-interval: 43200
+    CACTUS-interval: -1
+    CACTUS-max-height: 3
+    SUGAR_CANE-interval: 43200
+    SUGAR_CANE-max-height: 4
+    OAK_SAPLING: 86400
+    SPRUCE_SAPLING: -1
+    BIRCH_SAPLING: -1
+    JUNGLE_SAPLING: 43200
+    ACACIA_SAPLING: 64800
+    DARK_OAK_SAPLING: -1
+    MANGROVE_PROPAGULE: 43200
+    CHERRY_SAPLING: -1
+    BAMBOO-interval: 21600
+    BAMBOO-max-height: 12
+    KELP-interval: 28800
+    KELP-max-height: 10
+    
+  Arid:
+    WHEAT: 129600
+    CARROTS: 86400
+    POTATOES: -1
+    BEETROOTS: -1
+    SWEET_BERRY_BUSH: -1
+    COCOA: -1
+    PUMPKIN_STEM: -1
+    PUMPKIN_STEM-fruit-interval: -1
+    MELON_STEM: 86400
+    MELON_STEM-fruit-interval: 86400
+    CACTUS-interval: 43200
+    CACTUS-max-height: 4
+    SUGAR_CANE-interval: 129600
+    SUGAR_CANE-max-height: 4
+    OAK_SAPLING: 43200
+    SPRUCE_SAPLING: -1
+    BIRCH_SAPLING: -1
+    JUNGLE_SAPLING: 43200
+    ACACIA_SAPLING: 21600
+    DARK_OAK_SAPLING: -1
+    MANGROVE_PROPAGULE: -1
+    CHERRY_SAPLING: -1
+    BAMBOO-interval: 600
+    BAMBOO-max-height: 16
+    KELP-interval: 600
+    KELP-max-height: 16
+    
+  Temperate:
+    WHEAT: 43200
+    CARROTS: 43200
+    POTATOES: 43200
+    BEETROOTS: 86400
+    SWEET_BERRY_BUSH: -1
+    COCOA: -1
+    PUMPKIN_STEM: 129600
+    PUMPKIN_STEM-fruit-interval: 129600
+    MELON_STEM: -1
+    MELON_STEM-fruit-interval: -1
+    CACTUS-interval: -1
+    CACTUS-max-height: 3
+    SUGAR_CANE-interval: -1
+    SUGAR_CANE-max-height: 3
+    OAK_SAPLING: 43200
+    SPRUCE_SAPLING: 64800
+    BIRCH_SAPLING: 43200
+    JUNGLE_SAPLING: -1
+    ACACIA_SAPLING: -1
+    DARK_OAK_SAPLING: 86400
+    MANGROVE_PROPAGULE: -1
+    CHERRY_SAPLING: 43200
+    BAMBOO-interval: -1
+    BAMBOO-max-height: 8
+    KELP-interval: -1
+    KELP-max-height: 8
+    
+  Chilly:
+    WHEAT: 129600
+    CARROTS: -1
+    POTATOES: 86400
+    BEETROOTS: 43200
+    SWEET_BERRY_BUSH: 43200
+    COCOA: -1
+    PUMPKIN_STEM: 86400
+    PUMPKIN_STEM-fruit-interval: 86400
+    MELON_STEM: -1
+    MELON_STEM-fruit-interval: -1
+    CACTUS-interval: -1
+    CACTUS-max-height: 3
+    SUGAR_CANE-interval: -1
+    SUGAR_CANE-max-height: 3
+    OAK_SAPLING: -1
+    SPRUCE_SAPLING: 43200
+    BIRCH_SAPLING: 64800
+    JUNGLE_SAPLING: -1
+    ACACIA_SAPLING: -1
+    DARK_OAK_SAPLING: -1
+    MANGROVE_PROPAGULE: -1
+    CHERRY_SAPLING: -1
+    BAMBOO-interval: -1
+    BAMBOO-max-height: 4
+    KELP-interval: -1
+    KELP-max-height: 6
+    
+  Alpine:
+    WHEAT: -1
+    CARROTS: -1
+    POTATOES: 129600
+    BEETROOTS: 86400
+    SWEET_BERRY_BUSH: 43200
+    COCOA: -1
+    PUMPKIN_STEM: 43200
+    PUMPKIN_STEM-fruit-interval: 43200
+    MELON_STEM: -1
+    MELON_STEM-fruit-interval: -1
+    CACTUS-interval: -1
+    CACTUS-max-height: 3
+    SUGAR_CANE-interval: -1
+    SUGAR_CANE-max-height: 3
+    OAK_SAPLING: -1
+    SPRUCE_SAPLING: 86400
+    BIRCH_SAPLING: -1
+    JUNGLE_SAPLING: -1
+    ACACIA_SAPLING: -1
+    DARK_OAK_SAPLING: -1
+    MANGROVE_PROPAGULE: -1
+    CHERRY_SAPLING: -1
+    BAMBOO-interval: -1
+    BAMBOO-max-height: 3
+    KELP-interval: -1
+
+    KELP-max-height: 4
